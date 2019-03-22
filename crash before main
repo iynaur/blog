@@ -1,1 +1,4 @@
 when a complicated program crashed before main, it may be caused by screwd link orders of dynamic lib.
+
+Link order certainly does matter, at least on some platforms. I have seen crashes for applications linked with libraries in wrong order (where wrong means A linked before B but B depends on A).
+-- from https://stackoverflow.com/a/798086
