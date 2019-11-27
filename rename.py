@@ -10,3 +10,14 @@ count = 1
 for file in os.listdir(path):
     os.rename(os.path.join(path,file),os.path.join(path,str(count)+".bmp"))
     count+=1
+	
+	
+import os
+path = './rot_left'
+count = 1
+for file in os.listdir(path):
+    nfile =file
+    print(nfile)
+    nfile = nfile.replace("gray", "")
+    os.rename(os.path.join(path,file),os.path.join(path,nfile))
+    count+=1
