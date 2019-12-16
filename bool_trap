@@ -1,0 +1,2 @@
+1. vector<bool> is partial specialization。
+2. if bool var not initialized by true or false, b and !b could both be true!
